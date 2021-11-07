@@ -1,0 +1,67 @@
+.title {
+  color: #8e6d59;
+  font-weight: bold;
+}
+.subtitle {
+  color: #836e63;
+  font-weight: bold;
+}
+.text-grey {
+  color: grey;
+  font-weight: bold;
+  font-size: 24px;
+}
+.btn-demo {
+  background-color: #f8f9f6;
+  border-color: #f8f9f6;
+  border-bottom: 3px solid #c6c7c4;
+}
+.btn-demo:hover {
+  background-color: #dfe0dd;
+  border-color: #dfe0dd;
+}
+.table > tbody > tr td {
+  text-align: center;
+  width: 20%;
+}
+.table > tbody > tr td > span {
+  color: #836e63;
+  font-weight: bold;
+  font-size: 18px;
+}
+.content::placeholder {
+  font-weight: bold;
+  color: #bcbcbc;
+}
+.multi-select {
+  background-color: #836e63;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+input {
+  margin-top: 1rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid #eae7e0;
+  font-size: 26px;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+.ui-slider-range {
+  background-color: #aca184;
+}
+.ui-slider .ui-slider-handle {
+  width: 35px;
+  height: 35px;
+  background-color: #836e63;
+  overflow: hidden;
+  position: absolute;
+  top: -10px;
+  border-style: none;
+}

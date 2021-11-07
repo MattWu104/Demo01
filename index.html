@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>用餐滿意度調查</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/radio.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script src="../script/script.js"></script>
+  </head>
+
+  <style>
+    thead,
+    tbody,
+    tfoot,
+    tr,
+    td,
+    th {
+      border-style: none !important;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <img
+        src="../images/image01.png"
+        alt="image01"
+        width="100%"
+        height="400px"
+      />
+      <div style="padding: 3rem">
+        <h1 class="title">用餐滿意度調查</h1>
+        <p class="text-grey">
+          煩請花費一點您寶貴的時間，填寫您用餐過後的意見回饋，幫助我們提供更好的用餐品質。
+        </p>
+      </div>
+      <button style="width: 100%" class="btn btn-demo" onclick="show_form()">
+        <span class="title" style="font-size: 20px"
+          >開始<i class="far fa-hand-point-down m-1"></i>填答</span
+        >
+      </button>
+      <div id="form-block" style="display: none">
+        <div style="padding: 3rem">
+          <h2 class="subtitle">您對於今日用餐的滿意程度：</h2>
+          <table class="table" style="margin-top: 2rem">
+            <tbody>
+              <tr style="border-bottom: 3px solid #eae7e0 !important">
+                <td><span>非常滿意</span></td>
+                <td><span>滿意</span></td>
+                <td><span>普通</span></td>
+                <td><span>不滿意</span></td>
+                <td><span>非常不滿意</span></td>
+              </tr>
+              <tr>
+                <td colspan="5" style="text-align: left">
+                  <h3 class="subtitle" style="margin: 2rem 0 1rem 2rem">
+                    整體
+                  </h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="all" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="all" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="all" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="all" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="all" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="5" style="text-align: left">
+                  <h3 class="subtitle" style="margin: 2rem 0 1rem 2rem">
+                    環境
+                  </h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="env" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="env" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="env" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="env" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="env" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="5" style="text-align: left">
+                  <h3 class="subtitle" style="margin: 2rem 0 1rem 2rem">
+                    服務
+                  </h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="survice" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="survice" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="survice" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="survice" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="survice" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="5" style="text-align: left">
+                  <h3 class="subtitle" style="margin: 2rem 0 1rem 2rem">
+                    餐點
+                  </h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="food" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="food" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="food" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="food" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="food" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="5" style="text-align: left">
+                  <h3 class="subtitle" style="margin: 2rem 0 1rem 2rem">
+                    價位
+                  </h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="price" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="price" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="price" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="price" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="price" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="padding: 3rem">
+          <h2 class="subtitle">您對於今日各餐點的滿意程度：</h2>
+          <table class="table" style="margin-top: 2rem">
+            <tbody>
+              <tr style="border-bottom: 3px solid #eae7e0 !important">
+                <td><span>非常滿意</span></td>
+                <td><span>滿意</span></td>
+                <td><span>普通</span></td>
+                <td><span>不滿意</span></td>
+                <td><span>非常不滿意</span></td>
+              </tr>
+              <tr>
+                <td colspan="5" style="text-align: left">
+                  <h3 class="subtitle" style="margin: 2rem 0 1rem 2rem">
+                    沙拉
+                  </h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="salad" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="salad" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="salad" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="salad" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="salad" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="5" style="text-align: left">
+                  <h3 class="subtitle" style="margin: 2rem 0 1rem 2rem">
+                    湯品
+                  </h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="soup" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="soup" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="soup" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="soup" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="soup" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="5" style="text-align: left">
+                  <h3 class="subtitle" style="margin: 2rem 0 1rem 2rem">
+                    主餐
+                  </h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="main" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="main" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="main" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="main" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="main" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="5" style="text-align: left">
+                  <h3 class="subtitle" style="margin: 2rem 0 1rem 2rem">
+                    甜點
+                  </h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="dessert" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="dessert" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="dessert" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="dessert" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="dessert" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="5" style="text-align: left">
+                  <h3 class="subtitle" style="margin: 2rem 0 1rem 2rem">
+                    飲料
+                  </h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="drinks" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="drinks" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="drinks" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="drinks" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="drinks" id="" value="" />
+                    <label>
+                      <i class="fas fa-check"></i>
+                    </label>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="padding: 3rem">
+          <h2 class="subtitle">對於本店或服務人員的建議：</h2>
+          <textarea
+            class="content"
+            style="
+              width: 100%;
+              font-size: 24px;
+              border: 3px solid #aca184;
+              border-radius: 6px;
+              margin-top: 2rem;
+            "
+            rows="5"
+            placeholder="請填入文字"
+          ></textarea>
+        </div>
+        <div style="padding: 3rem">
+          <div
+            style="
+              border: 3px dotted #eae7e0;
+              border-radius: 6px;
+              text-align: center;
+            "
+          >
+            <i
+              style="font-size: 80px; color: #bcbcbc; margin: 2.5rem"
+              class="fas fa-quote-right"
+            ></i>
+            <h1 class="title">為了提供更好的服務，請讓我們更了解你一點！</h1>
+            <p class="text-grey">
+              本問卷蒐集來的資訊，僅會作為內部服務改善使用，絕不外洩也不會作為其他用途使用，敬請放心填寫！
+            </p>
+          </div>
+        </div>
+        <div style="padding: 3rem">
+          <h2 class="subtitle">這是您第幾次到本店用餐？</h2>
+          <table class="table" style="margin-top: 2rem">
+            <tbody>
+              <tr>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="all" id="" value="" />
+                    <label style="text-align: left">
+                      <span
+                        style="font-size: 24px; margin-left: 2.5rem"
+                        class="subtitle"
+                        >●　第 1 次</span
+                      >
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="all" id="" value="" />
+                    <label style="text-align: left">
+                      <span
+                        style="font-size: 24px; margin-left: 2.5rem"
+                        class="subtitle"
+                        >●　2 - 3 次</span
+                      >
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="all" id="" value="" />
+                    <label style="text-align: left">
+                      <span
+                        style="font-size: 24px; margin-left: 2.5rem"
+                        class="subtitle"
+                        >●　4 - 6 次</span
+                      >
+                    </label>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="padding: 3rem">
+          <h2 style="display: inline-block" class="subtitle">
+            您是從哪裡得知本店呢？
+          </h2>
+          <span class="multi-select">複選</span>
+          <table class="table" style="margin-top: 2rem">
+            <tbody>
+              <tr>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="checkbox" />
+                    <label style="text-align: left">
+                      <span
+                        style="font-size: 24px; margin-left: 2.5rem"
+                        class="subtitle"
+                        >●　親友介紹</span
+                      >
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="checkbox" />
+                    <label style="text-align: left">
+                      <span
+                        style="font-size: 24px; margin-left: 2.5rem"
+                        class="subtitle"
+                        >●　宣傳傳單</span
+                      >
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="checkbox" />
+                    <label style="text-align: left">
+                      <span
+                        style="font-size: 24px; margin-left: 2.5rem"
+                        class="subtitle"
+                        >●　網路資訊</span
+                      >
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="checkbox" />
+                    <label style="text-align: left">
+                      <span
+                        style="font-size: 24px; margin-left: 2.5rem"
+                        class="subtitle"
+                        >●　經過看到</span
+                      >
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="checkbox" />
+                    <label style="text-align: left">
+                      <span
+                        style="font-size: 24px; margin-left: 2.5rem"
+                        class="subtitle"
+                        >●　其他管道</span
+                      >
+                    </label>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="padding: 3rem">
+          <h2 style="display: inline-block" class="subtitle">
+            請問您今天用餐的目的是？
+          </h2>
+          <span class="multi-select">複選</span>
+          <table class="table" style="margin-top: 2rem">
+            <tbody>
+              <tr>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="checkbox" />
+                    <label style="text-align: left">
+                      <span
+                        style="font-size: 24px; margin-left: 2.5rem"
+                        class="subtitle"
+                        >●　單純用餐</span
+                      >
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="checkbox" />
+                    <label style="text-align: left">
+                      <span
+                        style="font-size: 24px; margin-left: 2.5rem"
+                        class="subtitle"
+                        >●　朋友聚會</span
+                      >
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="checkbox" />
+                    <label style="text-align: left">
+                      <span
+                        style="font-size: 24px; margin-left: 2.5rem"
+                        class="subtitle"
+                        >●　家庭聚會</span
+                      >
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="checkbox" />
+                    <label style="text-align: left">
+                      <span
+                        style="font-size: 24px; margin-left: 2.5rem"
+                        class="subtitle"
+                        >●　情侶聚會</span
+                      >
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="checkbox" />
+                    <label style="text-align: left">
+                      <span
+                        style="font-size: 24px; margin-left: 2.5rem"
+                        class="subtitle"
+                        >●　生日聚會</span
+                      >
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="checkbox" />
+                    <label style="text-align: left">
+                      <span
+                        style="font-size: 24px; margin-left: 2.5rem"
+                        class="subtitle"
+                        >●　節日聚會</span
+                      >
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="checkbox" />
+                    <label style="text-align: left">
+                      <span
+                        style="font-size: 24px; margin-left: 2.5rem"
+                        class="subtitle"
+                        >●　商務宴請</span
+                      >
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="checkbox" />
+                    <label style="text-align: left">
+                      <span
+                        style="font-size: 24px; margin-left: 2.5rem"
+                        class="subtitle"
+                        >●　婚禮宴請</span
+                      >
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="checkbox" />
+                    <label style="text-align: left">
+                      <span
+                        style="font-size: 24px; margin-left: 2.5rem"
+                        class="subtitle"
+                        >●　尾牙春酒</span
+                      >
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="checkbox" />
+                    <label style="text-align: left">
+                      <span
+                        style="font-size: 24px; margin-left: 2.5rem"
+                        class="subtitle"
+                        >●　發表會</span
+                      >
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="checkbox" />
+                    <label style="text-align: left">
+                      <span
+                        style="font-size: 24px; margin-left: 2.5rem"
+                        class="subtitle"
+                        >●　記者會</span
+                      >
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="checkbox" />
+                    <label style="text-align: left">
+                      <span
+                        style="font-size: 24px; margin-left: 2.5rem"
+                        class="subtitle"
+                        >●　其他目的</span
+                      >
+                    </label>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="padding: 3rem">
+          <h2 class="subtitle">請問您今天是幾位用餐呢？</h2>
+          <h4 style="font-weight: bold; color: #aca184">
+            需大於等於1（可接受到小數點第0位）
+          </h4>
+          <input
+            type="number"
+            style="width: 100%"
+            class="content"
+            placeholder="請填入數字"
+          />
+        </div>
+        <div style="padding: 3rem">
+          <h2 class="subtitle">您再次前來本店用餐的意願：</h2>
+          <h4 style="font-weight: bold; color: #aca184">
+            0到10分，您的意願有多高呢？
+          </h4>
+          <div style="margin-top: 2rem" id="slider-range-min"></div>
+          <div style="width: 100%; margin-top: 2rem">
+            <span
+              style="
+                font-size: 18px;
+                font-weight: bold;
+                color: #aca184;
+                margin-right: 72.7rem;
+              "
+              >0</span
+            >
+            <span style="font-size: 18px; font-weight: bold; color: #aca184"
+              >10</span
+            >
+          </div>
+        </div>
+        <div style="padding: 3rem; border-left: 3px solid #836e63">
+          <h2 class="subtitle">個人資訊</h2>
+          <h4 style="font-weight: bold; color: #aca184">
+            本問卷蒐集來的資訊，僅會作為內部服務改善使用，絕不外洩也不會作為其他用途使用，敬請放心填寫！
+          </h4>
+        </div>
+        <div style="padding: 3rem">
+          <h2 class="subtitle">姓名：</h2>
+          <input style="width: 100%" class="content" placeholder="請填入文字" />
+        </div>
+        <div style="padding: 3rem">
+          <h2 class="subtitle">性別：</h2>
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="sex" />
+                    <label style="text-align: left">
+                      <span
+                        style="font-size: 24px; margin-left: 2.5rem"
+                        class="subtitle"
+                        >●　生理男</span
+                      >
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div class="radio-item" style="width: 100%">
+                    <input type="radio" name="sex" />
+                    <label style="text-align: left">
+                      <span
+                        style="font-size: 24px; margin-left: 2.5rem"
+                        class="subtitle"
+                        >●　生理女</span
+                      >
+                    </label>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="padding: 3rem">
+          <h2 class="subtitle">生日：</h2>
+          <input type="date" style="width: 100%; color: #aca184" />
+        </div>
+        <div style="padding: 3rem">
+          <h2 class="subtitle">電話：</h2>
+          <input
+            type="tel"
+            style="width: 100%"
+            class="content"
+            placeholder="請填入電話號碼"
+          />
+        </div>
+        <div style="padding: 3rem">
+          <h2 class="subtitle">信箱：</h2>
+          <input
+            type="email"
+            style="width: 100%"
+            class="content"
+            placeholder="請填入電子信箱 例：abc@gmail.com"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
